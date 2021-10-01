@@ -14,7 +14,7 @@
 $destination = "$pwd"
 $server = "192.168.1.1"
 $user = "admin"
-$password = "pfsense"
+$password = "cGZzZW5zZQ=="  # "pfsense" as base64 encoded
 $UseSSL = $True
 
 
