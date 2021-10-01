@@ -1,6 +1,7 @@
 <#
-# CITRA IT - EXCELÊNCIA EM TI
+# CITRA IT - EXCELÃŠNCIA EM TI
 # SCRIPT PARA BACKUP DO FIREWALL PFSENSE VIA EXPORT
+# AUTOR: luciano@citrait.com.br
 # DATA: 01/10/2021
 # EXAMPLO DE USO: Powershell -ExecutionPolicy ByPass -File C:\scripts\PS_Backup_pfSense_Configuration.ps1
 
