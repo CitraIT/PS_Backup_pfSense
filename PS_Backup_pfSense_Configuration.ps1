@@ -21,7 +21,7 @@ $UseSSL = $True
 ############ DO NOT MODIFY BELLOW ############
 
 #
-# Enable accepting self signed certificates
+# Enable accepting self signed certificates (default pfsense certificate is self signed)
 #
 add-type @"
 using System.Net;
@@ -50,7 +50,7 @@ $DebugPreference = "Continue"
 #
 # path to save the backup file
 #
-Write-Debug "Salvando o backup do pfSense na pasta: $destination"
+Write-Debug "Saving backup file onto folder: $destination"
 
 
 
@@ -67,7 +67,7 @@ If($UseSSL)
 
 
 #
-# base uri
+# base uri's
 #
 $baseuri   = $schema + $server
 $backupuri = $baseuri + "/diag_backup.php"
@@ -79,7 +79,7 @@ Write-Debug "backup uri: $backupuri"
 
 
 #
-# Initial request to landing page
+# Initial request to landing page to get cookies and csrf token
 #
 try{
     $req = invoke-webrequest -Uri $baseuri -Method GET -SessionVariable 'websess' -UseBasicParsing
@@ -100,7 +100,7 @@ $logindata = @{
 
 
 #
-# Sending login form
+# Sending login form to authentication page
 #
 try{
     $req = invoke-webrequest -Uri $baseuri -Method POST `
