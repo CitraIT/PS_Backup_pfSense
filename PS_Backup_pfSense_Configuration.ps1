@@ -65,7 +65,7 @@ Write-Debug "backup uri: $pfsense_backup_uri"
 
 
 #
-# Enable accepting self signed certificates (default pfsense certificate is self signed)
+# Enable accepting self signed certificates (default pfsense webgui certificate is self signed)
 # Use a custom CertificateValidationPolicy that always returns true
 #
 Write-Debug "Enabling trust on self-signed certificates via .net assembly"
