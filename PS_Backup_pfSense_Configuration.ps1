@@ -27,7 +27,7 @@ $UseSSL = $True
 
 
 ############ DO NOT MODIFY FROM NOW ON UNLESS YOU ARE A PS EXPERT ############
-############     DON'T TELL A DIDN'T WARN YOU :D      ############
+############     DON'T TELL I DIDN'T WARN YOU :D      ############
 
 
 
